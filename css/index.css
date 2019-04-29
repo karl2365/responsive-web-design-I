@@ -203,7 +203,7 @@ footer{
   text-align: left;
 }
 
-@media(min-width: 600px){
+@media(min-width: 500px){
 
   nav {
     flex-flow: row nowrap;
@@ -237,7 +237,7 @@ footer{
   
 }
 
-@media(min-width: 1200px){
+@media(min-width: 800px){
 
   .logo{
     display: none;
@@ -264,7 +264,7 @@ footer{
     display: inline-block;
     height: 100%;
     width: 100%;
-    
+
   }
 
 
