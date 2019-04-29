@@ -74,7 +74,7 @@ body {
   
 }
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   
@@ -107,6 +107,11 @@ nav a:hover{
 .logo{
   margin: 20px 0;
 }
+.logo2 {
+  display: none;
+  
+}
+
 header{
   margin: 0 0 20px 0;
   text-align: center;
@@ -229,6 +234,37 @@ footer{
   .bottomRight {
     width: 90%;
   }
-
   
+}
+
+@media(min-width: 1200px){
+
+  .logo{
+    display: none;
+  }
+  
+  .logo2{
+    display: inline-block;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+  }
+  
+  .headLeft{
+    width: 33%
+  }
+  .headRight{
+    width: 33%
+  }
+
+  header img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+
+
 }
