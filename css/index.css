@@ -1,3 +1,271 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+  box-sizing: border-box;
+  text-align: 0 auto;
+}
+body {
+
+  
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+nav {
+  
+ 
+  width: 95%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  z-index: 1;
+}
+nav a {
+  
+  display: inline-block;
+  color: #666666;
+  width: 95%;
+  text-decoration: none;
+  font-size: 10pt; 
+  padding: 5px 15px;
+  vertical-align: middle;
+  border-bottom: 1px solid black;
+   
+}
+nav a:hover{
+  color: red;
+}
+.logo{
+  margin: 20px 0;
+}
+.logo2 {
+  display: none;
+  
+}
+
+header{
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.headButton{
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px;
+  width: 150px;
+}
+.headButton:hover{
+  color: white;
+  background: black;
+}
+header h1{
+  text-align: center;
+  font-size: 350%;
+  width: 65%;
+  display: inline-block;
+  padding: 40px 0;
+  box-sizing: border-box;
+  vertical-align: text-bottom;
+}
+header img {
+  
+  width: 45%;
+  display: none;  
+}
+.topSection{
+  margin: 0 0 20px 0;
+  padding-top: 20px;
+  border-top: 1px solid black;
+  text-align: left;
+}
+.topLeft {
+  display: inline-block;
+  /* min-width: 150px; */
+  margin-bottom: 20px;
+
+}
 
 
+.topRight {
+  display: inline-block;
+  width: 49%;
+}
+
+.middle-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.bottomSection {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+}
+.bottomLeft{
+  display: inline-block;
+  margin-top: 20px;
+}
+.bottomCenter{
+  display: inline-block;
+  margin-top: 20px;
+}
+ 
+.bottomRight {
+  display: inline-block;
+  margin-top: 20px;
+ 
+}
+.contact {
+  margin-top: 30px;
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+footer{
+  font-size: 10pt;
+  text-align: center;
+  margin-top: 20px;
+}
+.topSection, .bottomSection  {
+    font-family: 'Cute Font', cursive;
+}
+.tail {
+  text-align: left;
+}
+
+@media(min-width: 500px){
+
+  nav {
+    flex-flow: row nowrap;
+  }
+  nav a {
+    border: none;
+  }
+  /* nav:first-child {
+    display: block;
+  } */
+  
+  .topLeft {
+    width: 49%;
+  }
+  
+  .bottomSection {
+
+    flex-flow: row;
+    text-align: left;
+  }
+  .bottomLeft{
+    width: 90%;
+  }
+  .bottomCenter{
+    width: 90%;
+  }
+   
+  .bottomRight {
+    width: 90%;
+  }
+  
+}
+
+@media(min-width: 800px){
+
+  .logo{
+    display: none;
+  }
+  
+  .logo2{
+    display: inline-block;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+  }
+  
+  .headLeft{
+    width: 33%
+  }
+  .headRight{
+    width: 33%
+  }
+
+  header img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+  }
+
+
+}
